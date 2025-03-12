@@ -1,0 +1,89 @@
+# Platform Build Rules for Industrial Projects Platform
+
+This document outlines the mandatory rules and guidelines for building a platform that serves the following key features:
+- **Industrial Search:** Enable clients to search and discover industrial projects and opportunities.
+- **Public Money Application:** Facilitate applications for public funding to build or develop industrial projects.
+- **Manager Dashboard:** Provide comprehensive tools for managing accounts, subscriptions, and client access to the software.
+
+---
+
+## 1. Technical Stack and Core Requirements
+
+- **Next.js:** Version 15 must be used as the framework for the application.
+- **UI Framework:** shadcn version 2.3.0 is required for building UI components.
+- **CSS Framework:** Tailwind CSS version 3 is mandatory for styling and layout.
+- **Language:** All code must be written in TypeScript, adhering to strict typing and best practices.
+- **Containerization:** The application must be containerized using Docker.
+- **SEO & Performance:** The platform should follow best practices for search engine optimization and performance enhancement.
+
+---
+
+## 2. Project Architecture and Code Organization
+
+### 2.1. Project Structure
+- **Modular Architecture:** Organize code into logical modules, separating concerns such as business logic, components, services, and styles.
+- **Next.js Conventions:** Follow the Next.js file and folder structure to optimize routing, API handling, and static/dynamic page generation.
+- **TypeScript Integration:** Use clear and well-documented TypeScript interfaces and types for all modules.
+
+### 2.2. Component Design
+- **UI Components:** Utilize shadcn components for a consistent, modern, and accessible design system.
+- **Reusability:** Develop reusable components to reduce code duplication and improve maintainability.
+- **Tailwind CSS:** Employ Tailwind CSS classes for responsive, utility-first styling. Avoid inline styles and ensure consistency through configuration.
+
+### 2.3. API and Data Handling
+- **Next.js API Routes:** Leverage built-in API routes for backend logic where applicable.
+- **Data Fetching:** Implement efficient data fetching strategies with support for SSR (Server-Side Rendering) and SSG (Static Site Generation) to boost performance.
+- **Error Handling & Validation:** Ensure robust error handling and data validation for all endpoints.
+
+---
+
+## 3. Best Practices and Quality Standards
+
+### 3.1. TypeScript Best Practices
+- **Strict Typing:** Enforce strict type checking; avoid using `any` by explicitly defining types and interfaces.
+- **Documentation:** Use JSDoc comments and maintain comprehensive documentation for functions, modules, and interfaces.
+- **Code Consistency:** Follow consistent coding styles and patterns across the codebase.
+
+### 3.2. Next.js Best Practices
+- **Rendering Strategies:** Use SSR and SSG appropriately to optimize page loading times.
+- **Dynamic Imports:** Implement dynamic imports and code splitting to minimize JavaScript bundle sizes.
+- **SEO Optimization:** Utilize Next.js's Head component to manage meta tags, titles, and descriptions for optimal SEO performance.
+
+### 3.3. Tailwind CSS Best Practices
+- **Utility-First Approach:** Leverage Tailwind's utility classes to build responsive and consistent UI components.
+- **Customization:** Organize and manage custom Tailwind configurations effectively to maintain design consistency.
+- **Avoid Inline Styles:** Rely on Tailwind classes over inline styles to promote maintainability and scalability.
+
+---
+
+## 4. SEO and Performance Optimization
+
+- **Image Optimization:** Use Next.js's image optimization features to serve appropriately sized and optimized images.
+- **Performance Metrics:** Monitor and optimize key performance metrics such as Time to First Byte (TTFB), First Contentful Paint (FCP), and Largest Contentful Paint (LCP).
+- **Caching Strategies:** Implement caching and CDNs where applicable to improve load times.
+- **Semantic HTML:** Use semantic HTML and proper meta tags to enhance SEO and accessibility.
+- **Responsive Design:** Ensure the platform is fully responsive and performs well on all devices.
+
+---
+
+## 5. Docker Containerization
+
+- **Dockerfile:** Create an optimized Dockerfile for the application, employing multi-stage builds to reduce image size and improve security.
+- **Container Best Practices:** Ensure the container environment replicates production settings and follows security best practices.
+- **Local Development:** Provide guidelines for running and debugging the application within Docker containers during development.
+
+---
+
+## 6. Additional Guidelines
+
+- **Code Quality:** Write clean, maintainable, and well-documented code. Enforce linting and formatting standards.
+- **Testing:** Implement unit and integration tests to cover critical functionalities, ensuring code reliability.
+- **Version Control:** Follow best practices in version control, including clear commit messages, feature branching, and pull request reviews.
+- **Accessibility:** Adhere to WCAG guidelines to ensure the platform is accessible to all users.
+- **Security:** Incorporate best practices for security in both frontend and backend code.
+
+---
+
+## Conclusion
+
+Adherence to these rules is critical for building a robust, scalable, and high-performance platform tailored for industrial search, public money applications, and comprehensive client management. This document should serve as the foundation for development and ensure the platform aligns with the highest standards in SEO, performance, and code quality.
